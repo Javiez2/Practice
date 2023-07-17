@@ -1,9 +1,9 @@
 * {
     padding: 0px;
     margin: 0px;
+    background: gray;
 }
 .nav-con {
-    border: 1px solid;
     width: 13%;
     margin-left: 43.5%;
     margin-top: 10%;
@@ -13,3 +13,32 @@
     text-align: center;
     color: white;
 }
+.svg-con {
+    display: flex;
+    justify-content: center;
+    
+}
+#Ellipse1, #Ellipse3 {
+   animation: dp1 3s linear infinite;
+   transform-origin: center;
+}
+    @keyframes dp1 {
+        from{
+            transform: rotatez(0deg);
+        }
+        to{
+            transform: rotatez(360deg);
+        }
+    }
+#Ellipse2, #Ellipse4 {
+    animation: dp2 3s linear infinite;
+    transform-origin: center;
+}
+    @keyframes dp2 {
+        from{
+            transform: rotatez(0deg);
+        }
+        to{
+            transform: rotatez(-360deg);
+        }
+    }
